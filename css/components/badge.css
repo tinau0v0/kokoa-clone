@@ -9,3 +9,11 @@
   color: white;
   font-weight: 600;
 }
+
+.new {
+  background-color: tomato;
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px;
+  margin: 15px;
+}

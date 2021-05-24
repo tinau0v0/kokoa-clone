@@ -1,6 +1,7 @@
 #chat-screen {
-  background-color: #abc1d1;
-  height: 500vh;
+  background: url('../../images/screen-v.jpg') 0 0;
+  background-size: contain;
+  height: 120vh;
 }
 
 #chat-screen .alt-header,
@@ -8,8 +9,8 @@
   top: 0;
   position: fixed;
   width: 100%;
-  background-color: #abc1d1;
   box-sizing: border-box;
+  background: #FFD300;
 }
 
 #chat-screen .status-bar {
@@ -23,7 +24,7 @@
 
 @keyframes fadeIn {
   from {
-    transform: translateY(30px);
+    transform: translateY(10px);
     opacity: 0;
   }
   to {
@@ -37,12 +38,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeIn 0.8s linear;
+  animation: fadeIn 0.5s ease-in;
 }
 
 .chat__timestamp {
-  color: white;
-  background-color: #92a4b2;
+  color: #000;
+  background-color: rgba(0,0,0,0.1);
   padding: 15px;
   font-size: 14px;
   border-radius: 25px;
@@ -74,7 +75,7 @@
 }
 
 .message__bubble {
-  background-color: white;
+  background-color: #fff;
   padding: 13px;
   font-size: 18px;
   border-radius: 15px;
@@ -82,9 +83,13 @@
   margin-right: 5px;
 }
 
-.message__time,
 .message__author {
   opacity: 0.8;
+  font-size: 14px;
+}
+
+.message__time {
+  color: #fff;
   font-size: 14px;
 }
 
@@ -93,7 +98,8 @@
 }
 
 .message-row--own .message__bubble {
-  background-color: var(--yellow);
+  background-color: var(--purple);
+  color: #fff;
   border-top-right-radius: 0px;
   border-top-left-radius: 15px;
   margin-right: 0px;
@@ -169,7 +175,7 @@
 .reply .reply__column:first-child,
 .reply .fa-smile-wink,
 .reply button {
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .reply:focus-within .reply__column:first-child,
@@ -179,8 +185,8 @@
 }
 
 .reply:focus-within input {
-  width: 98vw;
-  transform: translateX(-13%) translateY(-80px);
+  width: 95vw;
+  transform: translateX(-12%) translateY(-80px);
 }
 
 .reply:focus-within {

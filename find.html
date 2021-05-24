@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Find - Kokoa Clone</title>
+    <title>Find - Butter Talk</title>
   </head>
   <body>
     <div class="status-bar">
@@ -13,10 +13,10 @@
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span>13:00</span>
       </div>
       <div class="status-bar__column">
-        <span>110%</span>
+        <span>100%</span>
         <i class="fas fa-battery-full fa-lg"></i>
         <i class="fas fa-bolt"></i>
       </div>
@@ -51,7 +51,19 @@
       </div>
       <div class="recommended-friends">
         <h6 class="recommended-friends__title">Recommended Friends</h6>
-        <span>You have no recommended friends.</span>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="./images/bang.jpg"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Bang Si-hyuk</h4>
+              <h6 class="user-component__subtitle">The Father of BTS</h6>
+            </div>
+          </div>
+          <div class="user-component__column"></div>
+        </div>
       </div>
       <div class="open-chat">
         <div class="open-chat__header">
@@ -62,20 +74,41 @@
         </div>
         <div class="open-post">
           <div class="open-post__column">
-            <h5 class="open-post__title">#BTS</h5>
-            <h6 class="open-post__hashtags">#bts#army#friends</h6>
+            <h5 class="open-post__title">#Butter Challenge</h5>
+            <h6 class="open-post__hashtags">#bts #army #butter</h6>
             <div class="open-post__members">
-              <img src="https://avatars3.githubusercontent.com/u/3612017" />
-              <span class="open-post__member-count">802 members</span>
+              <img src="./images/army.jpg" />
+              <span class="open-post__member-count">1.5M members</span>
               <div class="divider"></div>
               <span class="open-post__member-status">Active</span>
             </div>
           </div>
           <div class="open-post__column">
             <div class="open-post__photo">
-              <img src="https://avatars3.githubusercontent.com/u/3612017" />
+              <img src="./images/bts-butter.jpg" />
               <div class="open-post__heart-count">
-                <i class="fas fa-heart fa-xs"></i><span>326</span>
+                <i class="fas fa-heart fa-xs"></i><span>1.3M</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#Remember 518</h5>
+            <h6 class="open-post__hashtags">#062 #518 #democracy</h6>
+            <div class="open-post__members">
+              <img src="./images/army.jpg" />
+              <span class="open-post__member-count">1.4M members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img src="./images/518.jpg" />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart fa-xs"></i><span>1.2M</span>
               </div>
             </div>
           </div>
@@ -92,7 +125,7 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
+            <span class="nav__notification badge">9</span>
             <i class="far fa-comment fa-2x"></i>
           </a>
         </li>
@@ -103,6 +136,7 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="more.html">
+            <span class="nav__notification new"></span>
             <i class="fas fa-ellipsis-h fa-2x"></i>
           </a>
         </li>

@@ -16,3 +16,7 @@
 .settings__setting-column:last-child {
   opacity: 0.5;
 }
+
+.fa-flask:before {
+  padding: 2px;
+}
